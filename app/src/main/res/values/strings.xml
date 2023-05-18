@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">HelloAndroid</string>
+    <string name="label_user_name">Usuario</string>
+    <string name="label_password">Contraseña</string>
+    <string name="label_forgot_password">¿Olvidaste la cotraseña?</string>
+    <string name="label_login">Login</string>
+    <string name="label_other_options">Ó podes ingresar con</string>
+    <string name="label_not_account">¿No tenes cuenta?</string>
+    <string name="label_registry">Regístrate</string>
+    <string name="label_continue_as_invite">Continuar como invitado</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_create_account">Crear una cuenta</string>
+</resources>
