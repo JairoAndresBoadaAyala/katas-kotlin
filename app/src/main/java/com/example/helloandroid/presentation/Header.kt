@@ -1,4 +1,4 @@
-package com.example.helloandroid.ui.theme.presentation
+package com.example.helloandroid.presentation
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.padding

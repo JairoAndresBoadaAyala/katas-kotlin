@@ -1,4 +1,4 @@
-package com.example.helloandroid.ui.theme.presentation.fragmens
+package com.example.helloandroid.presentation.fragmens
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,8 +9,8 @@ import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.platform.ViewCompositionStrategy
 import androidx.navigation.findNavController
 import com.example.helloandroid.R
-import com.example.helloandroid.ui.theme.HelloAndroidTheme
-import com.example.helloandroid.ui.theme.presentation.LoginScreen
+import com.example.helloandroid.presentation.theme.HelloAndroidTheme
+import com.example.helloandroid.presentation.LoginScreen
 
 class LoginFragment : androidx.fragment.app.Fragment() {
 

@@ -1,4 +1,4 @@
-package com.example.helloandroid.ui.theme
+package com.example.helloandroid.presentation.theme
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -13,8 +13,8 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import com.example.helloandroid.MainActivity
-import com.example.helloandroid.ui.theme.presentation.SplashScreen
+import com.example.helloandroid.presentation.activities.MainActivity
+import com.example.helloandroid.presentation.SplashScreen
 import kotlinx.coroutines.delay
 import kotlin.time.Duration.Companion.seconds
 

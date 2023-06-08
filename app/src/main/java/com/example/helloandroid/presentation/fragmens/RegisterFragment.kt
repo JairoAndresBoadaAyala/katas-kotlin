@@ -1,4 +1,4 @@
-package com.example.helloandroid.ui.theme.presentation.fragmens
+package com.example.helloandroid.presentation.fragmens
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -48,11 +48,11 @@ import androidx.compose.ui.unit.sp
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.example.helloandroid.R
-import com.example.helloandroid.ui.theme.Gray4B4747
-import com.example.helloandroid.ui.theme.Gray707070
-import com.example.helloandroid.ui.theme.HelloAndroidTheme
-import com.example.helloandroid.ui.theme.Shapes
-import com.example.helloandroid.ui.theme.presentation.Header
+import com.example.helloandroid.presentation.theme.Gray4B4747
+import com.example.helloandroid.presentation.theme.Gray707070
+import com.example.helloandroid.presentation.theme.HelloAndroidTheme
+import com.example.helloandroid.presentation.theme.Shapes
+import com.example.helloandroid.presentation.Header
 
 class RegisterFragment : Fragment() {
 

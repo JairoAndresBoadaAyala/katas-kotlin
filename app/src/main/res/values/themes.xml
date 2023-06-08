@@ -13,6 +13,6 @@
         <item name="colorSecondaryVariant">@color/goldF6C700</item>
         <item name="colorOnSecondary">@color/goldF6C700</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">@color/goldF6C700</item>
     </style>
 </resources>

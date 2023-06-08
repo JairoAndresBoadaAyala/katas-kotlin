@@ -1,7 +1,8 @@
 @file:OptIn(ExperimentalMaterial3Api::class)
 
-package com.example.helloandroid.ui.theme.presentation
+package com.example.helloandroid.presentation
 
+import android.content.Intent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -32,6 +33,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
@@ -42,10 +44,11 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.helloandroid.R
-import com.example.helloandroid.ui.theme.GoldF6C700
-import com.example.helloandroid.ui.theme.Gray707070
-import com.example.helloandroid.ui.theme.HelloAndroidTheme
-import com.example.helloandroid.ui.theme.Shapes
+import com.example.helloandroid.presentation.activities.SearchActivity
+import com.example.helloandroid.presentation.theme.GoldF6C700
+import com.example.helloandroid.presentation.theme.Gray707070
+import com.example.helloandroid.presentation.theme.HelloAndroidTheme
+import com.example.helloandroid.presentation.theme.Shapes
 
 @Composable
 fun LoginScreen(onRegisterClick: () -> Unit) {
@@ -55,6 +58,8 @@ fun LoginScreen(onRegisterClick: () -> Unit) {
     val currentPasswordState = remember {
         mutableStateOf("")
     }
+
+    val context = LocalContext.current
 
     val validateFields =
         currentTextState.value.isNotEmpty() && currentPasswordState.value.isNotEmpty()
@@ -84,10 +89,12 @@ fun LoginScreen(onRegisterClick: () -> Unit) {
                     .fillMaxWidth()
                     .height(54.dp),
                 maxLines = 1,
-                colors = TextFieldDefaults.textFieldColors(
-                    textColor = Gray707070,
+                colors = TextFieldDefaults.colors(
+                    focusedTextColor = Gray707070,
+                    unfocusedTextColor = Gray707070,
                     disabledTextColor = Color.Transparent,
-                    containerColor = Color.White,
+                    focusedContainerColor = Color.White,
+                    unfocusedContainerColor = Color.White,
                     focusedIndicatorColor = Color.Transparent,
                     unfocusedIndicatorColor = Color.Transparent,
                     disabledIndicatorColor = Color.Transparent
@@ -113,10 +120,12 @@ fun LoginScreen(onRegisterClick: () -> Unit) {
                     .fillMaxWidth()
                     .height(54.dp),
                 maxLines = 1,
-                colors = TextFieldDefaults.textFieldColors(
-                    textColor = Gray707070,
+                colors = TextFieldDefaults.colors(
+                    focusedTextColor = Gray707070,
+                    unfocusedTextColor = Gray707070,
                     disabledTextColor = Color.Transparent,
-                    containerColor = Color.White,
+                    focusedContainerColor = Color.White,
+                    unfocusedContainerColor = Color.White,
                     focusedIndicatorColor = Color.Transparent,
                     unfocusedIndicatorColor = Color.Transparent,
                     disabledIndicatorColor = Color.Transparent
@@ -142,7 +151,8 @@ fun LoginScreen(onRegisterClick: () -> Unit) {
         ) {
             Button(
                 onClick = {
-                    println("jairo--- click button")
+                    // TODO: con esto se lanza la nueva actividad
+                    context.startActivity(Intent(context, SearchActivity::class.java))
                 },
                 modifier = Modifier
                     .fillMaxWidth()
